@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入外部css文件 -->
+    <link rel="stylesheet" href="css/music.css">
+    <title>kyra音乐</title>
+</head>
+
+<body>
+
+    <!-- 横幅开始 banner start-->
+    <div class="banner">
+        <ul class="imgAll">
+            <li class='m1' datasrc="mp3/1.mp3" title="倒数-邓紫棋"><img src="imgs/1.PNG" width="90"></li>
+            <li class='m2' datasrc="mp3/2.mp3" title="一直很安静-阿桑"><img src="imgs/2.PNG" width="90"></li>
+            <li class='m3' datasrc="mp3/3.mp3" title="永不失联的爱-单依存"><img src="imgs/3.PNG" width="90"></li>
+            <li class='m4' datasrc="mp3/4.mp3" title="童话-光良"><img src="imgs/4.PNG" width="90"></li>
+            <li class='m5' datasrc="mp3/5.mp3" title="消愁-毛不易"><img src="imgs/5.PNG" width="90"></li>
+            <li class='m6' datasrc="mp3/6.mp3" title="此生不换-青鸟飞鱼"><img src="imgs/6.PNG" width="90"></li>
+            <li class='m7' datasrc="mp3/7.mp3" title="说说话-王靖雯"><img src="imgs/7.PNG" width="90"></li>
+            <li class='m8' datasrc="mp3/8.mp3" title="演员-薛之谦"><img src="imgs/8.PNG" width="90"></li>
+            <li class='m9' datasrc="mp3/9.mp3" title="偏爱-张芸京"><img src="imgs/9.PNG" width="90"></li>
+
+        </ul>
+    </div>
+    <!-- 横幅结束  end-->
+    <!-- music start -->
+    <div class="music">
+        <div class="m_img">
+            <img src="imgs/1.PNG" width="90">
+        </div>
+        <div class="m_text">倒数-邓紫棋</div>
+        <div class="m_btn">
+            <a href="#" class="m_prev" title="上一首"></a>
+            <a href="#" class="m_play" title="播放"></a>
+            <a href="#" class="m_next" title="下一首"></a>
+        </div>
+        <div class="close"></div>
+        <audio src="mp3/1.mp3" class="m_mp3"></audio>
+    </div>
+    <!-- music end -->
+    <!-- 引入jQuery核心文件 -->
+    <script src="js/jquery-3.6.0.main.js"></script>
+    <script src="js/music.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+/* 采用什么编码解析文件 */
+
+@charset "utf-8";
+body {
+    background: url(../imgs/body_bg.PNG) no-repeat;
+    background-size: cover;
+}
+
+
+/* 横幅开始 */
+
+
+/* 设置横幅的宽高背景 */
+
+.banner {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background: url(../imgs/bg.PNG) no-repeat;
+    margin: 80px;
+    opacity: 0.8;
+    box-shadow: 10px 15px 15px 1px;
+}
+
+
+/* li 的样式 */
+
+.banner ul li {
+    list-style: none;
+    /* float: left; */
+    display: inline-block;
+    position: absolute;
+}
+
+
+/* 操作图片 */
+
+.banner ul li img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* 使用类选择器改变图片的位置 */
+
+.m1 {
+    top: 30px;
+    left: 20px;
+}
+
+.m2 {
+    top: 70px;
+    left: 100px;
+}
+
+.m3 {
+    top: 30px;
+    left: 200px;
+}
+
+.m4 {
+    top: 70px;
+    left: 310px;
+}
+
+.m5 {
+    top: 30px;
+    left: 420px;
+}
+
+.m6 {
+    top: 70px;
+    left: 520px;
+}
+
+.m7 {
+    top: 30px;
+    left: 650px;
+}
+
+.m8 {
+    top: 70px;
+    left: 780px;
+}
+
+.m9 {
+    top: 30px;
+    right: 20px;
+}
+
+
+/* 图片旋转的动画 */
+
+@keyframes img_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes img_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes img_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 动画执行的时间和次数 */
+
+.abc {
+    /* animation: img_rotate 2s infinite liner; */
+    animation-name: img_rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/* 横幅结束 */
+
+
+/* 播放器start */
+
+
+/* 修改播放器的样式 */
+
+.music {
+    width: 550px;
+    height: 120px;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    bottom: 50px;
+    opacity: 0.8;
+    box-shadow: 10px 15px 15px 1px;
+}
+
+
+/* 调整音乐盒图片的位置 */
+
+.music .m_img {
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+
+.music .m_text {
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+
+/* 使得所有a标签一起移动 */
+
+.music .m_btn {
+    float: left;
+    position: absolute;
+    left: 300px;
+}
+
+
+/* 修改a 标签 */
+
+.music .m_btn a {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url(../imgs/player_bg.PNG);
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+
+/* 改变上一首的图片 */
+
+.music .m_btn .m_prev {
+    background-position: -315px -155px;
+}
+
+.music .m_btn .m_prev:hover {
+    background-position: -315px -215px;
+}
+
+
+/* 改变暂停的图片 */
+
+.music .m_btn .m_play {
+    background-position: -380px -158px;
+}
+
+.music .m_btn .m_play:hover {
+    background-position: -380px -240px;
+}
+
+
+/* 改变下一首的图片 */
+
+.music .m_btn .m_next {
+    background-position: -450px -155px;
+}
+
+.music .m_btn .m_next:hover {
+    background-position: -450px -215px;
+}
+
+
+/* 设置最后边的关闭样式 */
+
+.music .close {
+    width: 30px;
+    height: 120px;
+    float: right;
+    background: url(../imgs/player_bg.PNG);
+    background-position: -190px -190px;
+    cursor: pointer;
+}
+
+
+/* 更换播放器按钮及title为暂停 */
+
+.music .m_btn .m_pause {
+    background-position: -735px -327px;
+}
+
+.music .m_btn .m_pause:hover {
+    background-position: -811px -327px;
+}
+
+
+/* 隐藏或者显示播放器时编写的代码 */
+
+.music .m_open {
+    background-position: -269px -190px;
+}
+
+
+/* 播放器end */
